@@ -1,0 +1,64 @@
+.notification {
+    position: fixed;
+    z-index: 999999;
+    top: 50px;
+    right: 0;
+}
+
+.notification-container.success-notif-box {
+    color: turquoise;
+}
+.notification-container.info-notif-box {
+    color: #98984a;
+}
+.notification-container.warning-notif-box {
+    color: orange;
+}
+.notification-container.error-notif-box {
+    color: orangered;
+}
+.success-notif-box > .notification-block > .notification-icon {
+    background-image: url("/assets/lib/message/icons/checkmark-circle.svg");
+    background-size: 40px;
+}
+.info-notif-box > .notification-block > .notification-icon {
+    background-image: url("/assets/lib/message/icons/info-circle.svg");
+}
+.warning-notif-box > .notification-block > .notification-icon {
+    background-image: url("/assets/lib/message/icons/warning-triangle.svg");
+}
+.error-notif-box > .notification-block > .notification-icon {
+    background-image: url("/assets/lib/message/icons/error-circle.svg");
+}
+
+.notification-container {
+    background: #1f2937;
+    margin: 5px;
+    max-width: 350px;
+    width: max-content;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+.notification-message {
+    font-size: 13px;
+}
+.notification-active {
+    right: 5px;
+}
+
+.notification-block {
+    display: flex;
+    padding: 20px 10px;
+}
+
+.notification-icon {
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    padding: 15px;
+}

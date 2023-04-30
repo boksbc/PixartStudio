@@ -1,0 +1,23 @@
+{
+    "name": "boban/pixel-mvc",
+    "description": "MVC",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Pixel\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "boksbc",
+            "email": "boban.blaskovic@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.0",
+        "vlucas/phpdotenv": "^5.5",
+      "ext-pdo": "*",
+        "phpmailer/phpmailer": "^6.8"
+    }
+}
