@@ -6,7 +6,7 @@ use Pixel\src\SiteControllers\GeneralController;
 
 /** @var $router Router */
 
-//$router->staticPage([BaseController::class, "comingSoon"]);
+$router->staticPage([BaseController::class, "comingSoon"]);
 
 $router->get('/', [BaseController::class, "home"]);
 $router->get('/about', [BaseController::class, "about"]);
