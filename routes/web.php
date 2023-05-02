@@ -12,7 +12,7 @@ $router->get('/', [BaseController::class, "home"]);
 $router->get('/about', [BaseController::class, "about"]);
 $router->get('/service', [BaseController::class, "service"]);
 $router->get('/contact', [BaseController::class, "contact"]);
-$router->get('/coming', [BaseController::class, "comingSoon"]);
+$router->post('/contact', [BaseController::class, "contact"]);
 
 $router->group("/general", function () use ($router) {
     $router->get('/privacy', [GeneralController::class, "privacy"]);

@@ -20,8 +20,7 @@ class BaseController extends SiteController
         if ($this->request->isPost()) {
             if($this->validation->ContactFormValidation($data)) {
                if ($this->mail->ContactMail($data)) {
-                   $msg = ["MAIL_SUCCESS" => Messages::MAIL_SUCCESS];
-                   return $this->render("contact-us", ["msg" => $msg]);
+                   return $this->render("contact-us");
                }
             }
         }
