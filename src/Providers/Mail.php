@@ -10,8 +10,8 @@ class Mail extends MailProvider
     {
         $template = file_get_contents(self::$EMAIL_TEMPLATE_PATH . "contact.mail.phtml");
         $template = str_replace(
-            [ '{{firstname}}', '{{lastname}}', '{{email}}', '{{company}}', '{{textarea}}'],
-            [ $request['firstname'], $request['lastname'], $request['email'], $request['company'], $request['textarea']],
+            [ '{{firstname}}', '{{lastname}}', '{{email}}', '{{company}}', '{{textarea}}', '{{HTTP_USER_AGENT}}'],
+            [ $request['firstname'], $request['lastname'], $request['email'], $request['company'], $request['textarea'], $_SERVER['HTTP_USER_AGENT']],
             $template
         );
         $template .= $_SERVER['HTTP_USER_AGENT'];
