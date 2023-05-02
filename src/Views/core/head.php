@@ -11,9 +11,9 @@
     <meta property="og:url" content="<?= $this->request->fullUri() ?>">
     <meta property="og:type" content="website">
     <link rel="icon" type="image/x-icon" href="/images/site/favicon.ico">
-    <link rel="shortcut icon" href="/images/site/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="/images/site/favicon.png"/>
-    <link rel='canonical' href="<?= $this->request->fullUri() ?>"/>
+    <link rel="icon" type="image/png" href="/images/site/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="/images/site/favicon.ico">
+    <link rel="canonical" href="<?= $this->request->fullUri() ?>"/>
     <link rel="stylesheet" href="/assets/css/dist/output.css">
     <link rel="stylesheet" href="/assets/lib/message/message.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHW62KWF4F"></script>
